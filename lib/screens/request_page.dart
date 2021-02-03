@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:rest_api_calls/base_request.dart';
+import 'package:rest_api_calls/api/base_request.dart';
 
-import 'Item.dart';
-import 'error_widget.dart';
-import 'success_widget.dart';
+import '../models/Item.dart';
+import '../widgets/error_widget.dart';
+import '../widgets/success_widget.dart';
 
 class HTTPWidget extends StatefulWidget {
   final HTTPReqsuest<Item> _request;

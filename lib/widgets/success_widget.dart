@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Item.dart';
+import '../models/Item.dart';
 
 class SuccessItemWidget extends StatelessWidget {
   final Item data;

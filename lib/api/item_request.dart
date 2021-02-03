@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:rest_api_calls/base_request.dart';
-import 'package:rest_api_calls/Item.dart';
+import 'package:rest_api_calls/api/base_request.dart';
+import 'package:rest_api_calls/models/Item.dart';
 
 class RequestItem implements HTTPReqsuest<Item> {
   final String url;

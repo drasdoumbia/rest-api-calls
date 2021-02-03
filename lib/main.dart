@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rest_api_calls/item_request.dart';
-import 'package:rest_api_calls/request_page.dart';
+import 'package:rest_api_calls/api/item_request.dart';
+import 'package:rest_api_calls/screens/request_page.dart';
 
 void main() {
   runApp(App());
