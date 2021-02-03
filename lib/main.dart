@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:rest_api_calls/item_request.dart';
+import 'package:rest_api_calls/request_page.dart';
 
 void main() {
   runApp(App());
 }
 
 class App extends StatelessWidget {
-  // This widget is the root of your application.
+  static const _url = "https://jsonplaceholder.typicode.com/posts/10";
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,10 +18,11 @@ class App extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: Container(
-          child: Center(
-            child: Text("API practices!"),
-          ),
+        appBar: AppBar(
+          title: const Text("Request Demo"),
+        ),
+        body: HTTPWidget(
+          RequestItem(url: _url),
         ),
       ),
     );
